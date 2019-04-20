@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<VBox fx:id="root" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <HBox>
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <Text text="Height"/>
+        <TextField fx:id="height"/>
+    </HBox>
+    <HBox>
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <Text text="Width "/>
+        <TextField fx:id="width"/>
+    </HBox>
+    <HBox>
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <Text text="Position X"/>
+        <TextField fx:id="posX"/>
+    </HBox>
+    <HBox>
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <Text text="Position Y"/>
+        <TextField fx:id="posY"/>
+    </HBox>
+    <HBox style="-fx-alignment: CENTER_RIGHT">
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <Button text="Annuler" onAction="#cancel"/>
+        <Button text="Valider" onAction="#apply"/>
+    </HBox>
+</VBox>
+
